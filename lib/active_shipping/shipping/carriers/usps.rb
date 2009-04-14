@@ -74,16 +74,24 @@ module ActiveMerchant
         :all => 'ALL'
       }
 
-      STANDARD_SERVICES = [
-        ["USPS Priority Mail International"],
-        ["USPS Express Mail International"],
-        ["USPS Global Express Guaranteed Non-Document Non-Rectangular"],
-        ["USPS GXG Envelopes"],
-        ["USPS Global Express Guaranteed"]
-      ]
+      SERVICES = {
+	:common => [
+		["USPS Media Mail"],
+		["USPS Priority Mail"],
+		["USPS Express Mail"],
+		["USPS Priority Mail International"],
+		["USPS Express Mail International"],
+		["USPS Global Express Guaranteed"]
+	]
+      }
 
-      def self.standard_services
-        STANDARD_SERVICES
+
+      def self.services(stype)
+		SERVICES[stype]
+      end
+
+      def services(stype)
+        self.class.services(stype)
       end
       
       # TODO: get rates for "U.S. possessions and Trust Territories" like Guam, etc. via domestic rates API: http://www.usps.com/ncsc/lookups/abbr_state.txt
