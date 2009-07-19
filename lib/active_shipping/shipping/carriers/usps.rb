@@ -76,13 +76,61 @@ module ActiveMerchant
 
       SERVICES = {
 	:common => [
-		["USPS Media Mail"],
-		["USPS Priority Mail"],
-		["USPS Express Mail"],
-		["USPS Priority Mail International"],
-		["USPS Express Mail International"],
-		["USPS Global Express Guaranteed"]
-	]
+		["First-Class Mail"],
+		["Priority Mail"],
+		["Express Mail"],
+		["Parcel Post"],
+		["First-Class Mail Parcel"],
+		["Media Mail"],
+		["First Class Mail International Letters"],
+		["First Class Mail International Large Envelope"],
+		["First Class Mail International Package"],
+		["Priority Mail International"],
+		["Express Mail International (EMS)"],
+		["Global Express Guaranteed"],
+		#["USPS Media Mail"],
+		#["USPS Priority Mail"],
+		#["USPS Express Mail"],
+		#["USPS Priority Mail International"],
+		#["USPS Express Mail International"],
+		#["USPS Global Express Guaranteed"]
+	],
+        :us => [
+		["First-Class Mail"],
+		["Priority Mail"],
+		["Express Mail"],
+		["Parcel Post"],
+		["First-Class Mail Parcel"],
+		["Media Mail"],
+		["Express Mail Sunday/Holiday Guarantee"],
+		["Express Mail Flat-Rate Envelope Sunday/Holiday Guarantee"],
+		["Express Mail Hold For Pickup"],
+		["Express Mail Flat-Rate Envelope Hold For Pickup"],
+		["Express Mail Flat-Rate Envelope"],
+		["Priority Mail Flat-Rate Envelope"],
+		["Priority Mail Small Flat-Rate Box"],
+		["Priority Mail Regular/Medium Flat-Rate Boxes"],
+		["Priority Mail Large Flat-Rate Box"],
+		["First-Class Mail Flat"],
+		["Bound Printed Matter"],
+		["Library Mail"]
+        ],
+        :intl => [
+		["First Class Mail International Letters"],
+		["First Class Mail International Large Envelope"],
+		["First Class Mail International Package"],
+		["Priority Mail International"],
+		["Express Mail International (EMS)"],
+		["Global Express Guaranteed"],
+		["Global Express Guaranteed Non-Document Rectangular"],
+		["Global Express Guaranteed Non-Document Non-Rectangular"],
+		["USPS GXG Envelopes"],
+		["Express Mail International (EMS) Flat-Rate Envelope"],
+		["Priority Mail International Flat-Rate Envelope"],
+		["Priority Mail International Regular/Medium Flat-Rate Boxes"],
+		["Priority Mail International Large Flat-Rate Box"],
+		["Priority Mail International Small Flat-Rate Box"]
+        ]
       }
 
 
